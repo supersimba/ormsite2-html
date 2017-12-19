@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>ORMSITE INDEX</title>
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/table-info.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/orminfo.css">
+
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body>
+		<!--wrapper-->
+		<div class="wrapper">
+			<!--header-->
+			<nav class="navbar navbar-default navbar-fixed-top header">
+				<div class="navbar-header">
+					<a class="navbar-brand"><span style="color: rgb(54,162,205);">Oracle</span>复制监控</a>
+					<a class="navbar-brand" href="#" id="a-sidermenu-collape"><i class="fa fa-bars"></i></a>
+				</div>
+				<ul class="nav navbar-nav navbar-right ul-header-menu">
+					<li>
+						<a><i class="fa fa-bell-o"></i><i style="color: red;">8</i></a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">C罗<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">设置</a>
+							</li>
+							<li>
+								<a href="#">账号管理</a>
+							</li>
+							<li>
+								<a href="#">注销</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<!--end header-->
+			</nav>
+
+			<!--sider menu-->
+			<div class="div-sider-menu">
+				<ul class="ul-sider-menu">
+					<li>
+						<a href="#"><i class="fa fa-home" style="margin-right: 5px;"></i>首页</a>
+					</li>
+					<li>
+						<a href="#" id="a-jk-list"><i class="fa fa-list" style="margin-right: 8px;"></i>同步列表<i id="fa-jk-list-left" class="fa fa-angle-left" style="margin-left: 12px;"></i><i id="fa-jk-list-down" class="fa fa-angle-down" style="margin-left: 12px;"></i></a>
+						<ul id="ul-sub-jk-list" style="background: rgb(99,194,222);">
+							<li>
+								<a href="#">realsync</a>
+							</li>
+							<li>
+								<a href="#">goldengte</a>
+							</li>
+							<li>
+								<a href="#">dataguard</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" id="a-jk-gl"><i class="fa fa-list" style="margin-right: 8px;"></i>监控管理<i id="fa-jk-gl-left" class="fa fa-angle-left" style="margin-left: 12px;"></i><i id="fa-jk-gl-down" class="fa fa-angle-down" style="margin-left: 12px;"></i></a>
+						<ul id="ul-sub-jk-gl" style="background: rgb(99,194,222);">
+							<li>
+								<a href="#">realsync</a>
+							</li>
+							<li>
+								<a href="#">goldengte</a>
+							</li>
+							<li>
+								<a href="#">dataguard</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-sticky-note-o" style="margin-right: 5px;"></i>操作日志</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-server" style="margin-right: 5px;"></i>监控服务</a>
+					</li>
+				</ul>
+
+			</div>
+			<!--end sider menu-->
+
+			<!--content block-->
+			<div class="content-body">
+				<div class="container-fluid">
+					<!--path url-->
+					<div class="row">
+						<div class="col-md-12 col-path-url">
+							<ol class="breadcrumb path-url">
+								<li>
+									<a href="#">首页</a>
+								</li>
+							</ol>
+						</div>
+						<!--end path url-->
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<table class="table table-bordered table-info">
+								<thead>
+									<td></td>
+									<td>同步描述</td>
+									<td>源端</td>
+									<!--<td>源端脚本</td>-->
+									<td>S状态</td>
+									<td>S动作</td>
+									<td>S端时间</td>
+									<td>备端IP</td>
+									<!--<td>t-script</td>-->
+									<td>T状态</td>
+									<td>T动作</td>
+									<td>T端时间</td>
+									<!--<td>日志</td>-->
+									<td></td>
+								</thead>
+								<tbody id="table-info-tbody">
+									<tr>
+										<td style="text-align: center;">
+											<a class="sub-table-collape">
+												<i class="fa fa-plus-square-o"></i>
+											</a>
+										</td>
+										<td>重庆到电信cs</td>
+										<td>10.150.17.228:/dsg/dxzx321</td>
+										<!--<td>OK</td>-->
+										<td>OK</td>
+										<td>全量</td>
+										<td>12-18 09:23:11</td>
+										<td>10.150.17.228:/dsg/dxzx321</td>
+										<!--<td>t-script</td>-->
+										<td>OK</td>
+										<td>stop</td>
+										<td>12-18 09:23:11</td>
+										<!--<td>s t</td>-->
+										<td style="text-align: center;font-size: 15px;">
+											<a href="#"><i class="fa fa-gear" style="color: rgb(32,168,216);"></i></a>
+										</td>
+									</tr>
+									<tr class="tr-collape">
+										<td></td>
+										<td colspan="12">
+											<table class="table-subrow">
+												<tbody>
+													<tr>
+														<td style="padding: 0px;">S：</td>
+														<td>控制台进程数-2</td>
+														<td style="">分析进程数-2</td>
+														<td style="">传送进程数-2</td>
+														<td style="">分析进程报错：12</td>
+														<td style="">传送进程报错：0</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td style="padding: 0px;">T：</td>
+														<td style="">接收进程数-2</td>
+														<td style="">装载进程数（全量）-2</td>
+														<td style="">装载进程数（增量）-8</td>
+														<td style="">装载进度：12</td>
+														<td style="">装载报错：20</td>
+														<td style="">装载时间：12/18 09:11:22</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+
+									<tr>
+										<td style="text-align: center;">
+											<a class="sub-table-collape">
+												<i class="fa fa-plus-square-o"></i>
+											</a>
+										</td>
+										<td>重庆到上海</td>
+										<td>10.150.17.226:/dsg/cq-sh-exa</td>
+										<!--<td>OK</td>-->
+										<td>OK</td>
+										<td>全量</td>
+										<td>12-18 09:23:11</td>
+										<td>10.150.17.228:/dsg/dxzx321</td>
+										<!--<td>t-script</td>-->
+										<td>OK</td>
+										<td>stop</td>
+										<td>12-18 09:23:11</td>
+										<!--<td>s t</td>-->
+										<td style="text-align: center;font-size: 15px;">
+											<a href="#"><i class="fa fa-gear" style="color: rgb(32,168,216);"></i></a>
+										</td>
+									</tr>
+									<tr class="tr-collape">
+										<td></td>
+										<td colspan="12">
+											<table class="table-subrow">
+												<tbody>
+													<tr>
+														<td style="padding: 0px;">S：</td>
+														<td>控制台进程数-2</td>
+														<td style="">分析进程数-2</td>
+														<td style="">传送进程数-2</td>
+														<td style="">分析进程报错：12</td>
+														<td style="">传送进程报错：0</td>
+														<td></td>
+													</tr>
+													<tr>
+														<td style="padding: 0px;">T：</td>
+														<td style="">接收进程数-2</td>
+														<td style="">装载进程数（全量）-2</td>
+														<td style="">装载进程数（增量）-8</td>
+														<td style="">装载进度：12</td>
+														<td style="">装载报错：20</td>
+														<td style="">装载时间：12/18 09:11:22</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+
+							</table>
+						</div>
+					</div>
+
+					<!--footer-->
+					<div class="row">
+						<div class="col-md-12 footer">
+							<span style="color: rgb(54,162,205);">ormsite2</span>&nbsp;@李丹 2017 supersimba@github.com/ormsite2.git
+						</div>
+						<!--end footer-->
+					</div>
+				</div>
+
+				<!--end content block-->
+			</div>
+			<!--end wrapper-->
+		</div>
+	</body>
+
+</html>

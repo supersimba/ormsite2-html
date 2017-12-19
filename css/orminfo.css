@@ -1,0 +1,20 @@
+.table-info{
+	background: white;
+	font-size: 13px;
+	color:rgb(140,121,161);
+}
+.table-info thead{
+	color: black;
+}
+.table-subrow{
+	text-align: left;
+}
+
+.table-subrow td{
+	padding: 8px;
+}
+
+
+.tr-collape{
+	display: none;
+}
